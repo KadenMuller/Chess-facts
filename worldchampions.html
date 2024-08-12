@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <title>Chess Facts</title>
+    <style>
+        /* Add some basic styling */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        h1 {
+            text-align: center;
+        }
+        h2 {
+            color: #333;
+        }
+        p {
+            margin-bottom: 10px;
+        }
+        .quiz-question {
+            font-weight: bold;
+        }
+        .quiz-answer {
+            margin-left: 20px;
+        }
+    </style>
+    <script>
+        // Add some interactivity to the quiz section
+        function checkAnswers() {
+            var correctAnswers = 0;
+            var questions = document.getElementsByClassName('quiz-question');
+            for (var i = 0; i < questions.length; i++) {
+                var question = questions[i];
+                var answers = question.getElementsByClassName('quiz-answer');
+                var isCorrect = false;
+                for (var j = 0; j < answers.length; j++) {
+                    var answer = answers[j];
+                    if (answer.checked && answer.getAttribute('data-correct') === 'true') {
+                        isCorrect = true;
+                        break;
+                    }
+                }
+                if (isCorrect) {
+                    correctAnswers++;
+                }
+            }
+            alert('You got ' + correctAnswers + ' out of ' + questions.length + ' correct!');
+        }
+    </script>
+</head>
+<body>
+    <h1>Chess Facts: World Champions</h1>
+<section>
+
+</section>
+    
+<section>
+    <h2>Table of World Champions</h2>
+    <table>
+        <tr>
+            <th>#</th>
+            <th>Player</th>
+            <th>Dates</th>
+            <th>Wins</th>
+            <th>Years Won</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>Wilhelm Steinitz</td>
+            <td>1886-94</td>
+            <td>4</td>
+            <td>1886, 1889, 1890, 1892</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>Emanuel Lasker</td>
+            <td>1894-1921</td>
+            <td>6</td>
+            <td>1894, 1896, 1907, 1908, 1910*, 1910</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>Jose Raul Capablanca</td>
+            <td>1921-27</td>
+            <td>1</td>
+            <td>1921</td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td>Alexander Alekhine</td>
+            <td>1927-35, 1937-46</td>
+            <td>4</td>
+            <td>1927, 1929, 1934, 1937</td>
+        </tr>
+        <tr>
+            <td>5</td>
+            <td>Max Euwe</td>
+            <td>1935-37</td>
+            <td>1</td>
+            <td>1935</td>
+        </tr>
+        <tr>
+            <td>6</td>
+            <td>Mikhail Botvinnik</td>
+            <td>1948-57, 1958-60, 1961-63</td>
+            <td>5</td>
+            <td>1948t, 1951*, 1954*, 1958, 1961</td>
+        </tr>
+        <tr>
+            <td>7</td>
+            <td>Vasily Smyslov</td>
+            <td>1957-58</td>
+            <td>1</td>
+            <td>1957</td>
+        </tr>
+        <tr>
+            <td>8</td>
+            <td>Mikhail Tal</td>
+            <td>1960-61</td>
+            <td>1</td>
+            <td>1960</td>
+        </tr>
+        <tr>
+            <td>9</td>
+            <td>Tigran V. Petrosian</td>
+            <td>1963-69</td>
+            <td>2</td>
+            <td>1963, 1966</td>
+        </tr>
+        <tr>
+            <td>10</td>
+            <td>Boris Spassky</td>
+            <td>1969-72</td>
+            <td>1</td>
+            <td>1969</td>
+        </tr>
+        <tr>
+            <td>11</td>
+            <td>Bobby Fischer</td>
+            <td>1972-75</td>
+            <td>1</td>
+            <td>1972</td>
+        </tr>
+        <tr>
+            <td>12</td>
+            <td>Anatoly Karpov</td>
+            <td>1975-85</td>
+            <td>3#</td>
+            <td>1975d, 1978, 1981, 1984#</td>
+        </tr>
+        <tr>
+            <td>13</td>
+            <td>Garry Kasparov</td>
+            <td>1985-2000</td>
+            <td>6</td>
+            <td>1985, 1986, 1987*, 1990, 1993, 1995</td>
+        </tr>
+        <tr>
+            <td>14</td>
+            <td>Vladimir Kramnik</td>
+            <td>2000-07</td>
+            <td>3</td>
+            <td>2000, 2004*, 2006**</td>
+        </tr>
+        <tr>
+            <td>15</td>
+            <td>Viswanathan Anand</td>
+            <td>2007-13</td>
+            <td>4</td>
+            <td>2007t, 2008, 2010, 2012**</td>
+        </tr>
+        <tr>
+            <td>16</td>
+            <td>Magnus Carlsen</td>
+            <td>2013-2023</td>
+            <td>5</td>
+            <td>2013, 2014, 2016**, 2018**, 2021</td>
+        </tr>
+        <tr>
+            <td>17</td>
+            <td>Ding Liren</td>
+            <td>2023-present</td>
+            <td>1</td>
+            <td>2023**</td>
+        </tr>
+    </table>
+    <p>Notes: t - Tournament victory. * - Retained in drawn match. ** - Won in rapid/blitz tiebreaks. # - Leading match when canceled without official result. d - Default.</p>
+</section>
+
+    <!-- Add more facts as needed -->
+
+    <h2>Quiz</h2>
+    <div class="quiz-section">
+        <p class="quiz-question">Question 1: Who was the 1st World Champion?</p>
+        <label class="quiz-answer"><input type="radio" name="q1" data-correct="false"> 50</label>
+        <label class="quiz-answer"><input type="radio" name="q1" data-correct="false"> 100</label>
+        <label class="quiz-answer"><input type="radio" name="q1" data-correct="true"> No maximum</label>
+    </div>
+    <div class="quiz-section">
+        <p class="quiz-question">Question 2: Who was the 2nd World Champion?</p>
+        <label class="quiz-answer"><input type="radio" name="q2" data-correct="false"> 64</label>
+        <label class="quiz-answer"><input type="radio" name="q2" data-correct="true"> 64</label>
+        <label class="quiz-answer"><input type="radio" name="q2" data-correct="false"> 32</label>
+    </div>
+    <div class="quiz-section">
+        <p class="quiz-question">Question 3</p>
+        <label class="quiz-answer"><input type="radio" name="q2" data-correct="false"> 64</label>
+        <label class="quiz-answer"><input type="radio" name="q2" data-correct="true"> 64</label>
+        <label class="quiz-answer"><input type="radio" name="q2" data-correct="false"> 32</label>
+    </div>
+    <div class="quiz-section">
+        <p class="quiz-question">Question 4</p>
+        <label class="quiz-answer"><input type="radio" name="q2" data-correct="false"> 64</label>
+        <label class="quiz-answer"><input type="radio" name="q2" data-correct="true"> 64</label>
+        <label class="quiz-answer"><input type="radio" name="q2" data-correct="false"> 32</label>
+    </div>
+
+    <!-- Add more quiz questions as needed -->
+
+    <button onclick="checkAnswers()">Submit</button>
+</body>
+</html>
