@@ -2,91 +2,34 @@
 <html lang="en" dir="ltr">
 <head>
     <title>Chess Facts</title>
-    <style>
-        /* Add some basic styling */
-        body {
-            font-family: Arial, sans-serif;
-            margin: 20px;
-        }
-        h1 {
-            text-align: center;
-        }
-        h2 {
-            color: #333;
-        }
-        p {
-            margin-bottom: 10px;
-        }
-        .quiz-question {
-            font-weight: bold;
-        }
-        .quiz-answer {
-            margin-left: 20px;
-        }
-    </style>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+   
+</head>
+<h1></h1>
+
+<body>
+    <div class="slideshow-container">
+        <img src="images/World Champions/Wilhelm Steinitz.jpeg" alt="Image 1">
+        <img src="images/World Champions/Emanuel Lasker.jpeg" alt="Image 2">
+        <img src="images/World Champions/Jose Raul Capablanca.jpeg" alt="Image 3">
+    </div>
+
     <script>
-        // Add some interactivity to the quiz section
-        function checkAnswers() {
-            var correctAnswers = 0;
-            var questions = document.getElementsByClassName('quiz-question');
-            for (var i = 0; i < questions.length; i++) {
-                var question = questions[i];
-                var answers = question.getElementsByClassName('quiz-answer');
-                var isCorrect = false;
-                for (var j = 0; j < answers.length; j++) {
-                    var answer = answers[j];
-                    if (answer.checked && answer.getAttribute('data-correct') === 'true') {
-                        isCorrect = true;
-                        break;
-                    }
-                }
-                if (isCorrect) {
-                    correctAnswers++;
-                }
+        var slideIndex = 0;
+        showSlides();
+
+        function showSlides() {
+            var slides = document.querySelectorAll('.slideshow-container img');
+            for (var i = 0; i < slides.length; i++) {
+                slides[i].style.display = 'none';
             }
-            alert('You got ' + correctAnswers + ' out of ' + questions.length + ' correct!');
+            slideIndex++;
+            if (slideIndex > slides.length) {
+                slideIndex = 1;
+            }
+            slides[slideIndex - 1].style.display = 'block';
+            setTimeout(showSlides, 2000); // Change slide every 2 seconds
         }
     </script>
-</head>
-<body>
-    <h1>Chess Facts</h1>
-
-    <h2>Fact 1</h2>
-    <p>Insert your chess fact here.</p>
-
-    <h2>Fact 2</h2>
-    <p>Insert another chess fact here.</p>
-
-    <!-- Add more facts as needed -->
-
-    <h2>Quiz</h2>
-    <div class="quiz-section">
-        <p class="quiz-question">Question 1: What is the maximum number of moves in a game of chess?</p>
-        <label class="quiz-answer"><input type="radio" name="q1" data-correct="false"> 50</label>
-        <label class="quiz-answer"><input type="radio" name="q1" data-correct="false"> 100</label>
-        <label class="quiz-answer"><input type="radio" name="q1" data-correct="true"> No maximum</label>
-    </div>
-    <div class="quiz-section">
-        <p class="quiz-question">Question 2: How many squares are on a chessboard?</p>
-        <label class="quiz-answer"><input type="radio" name="q2" data-correct="false"> 64</label>
-        <label class="quiz-answer"><input type="radio" name="q2" data-correct="true"> 64</label>
-        <label class="quiz-answer"><input type="radio" name="q2" data-correct="false"> 32</label>
-    </div>
-    <div class="quiz-section">
-        <p class="quiz-question">Question 3</p>
-        <label class="quiz-answer"><input type="radio" name="q2" data-correct="false"> 64</label>
-        <label class="quiz-answer"><input type="radio" name="q2" data-correct="true"> 64</label>
-        <label class="quiz-answer"><input type="radio" name="q2" data-correct="false"> 32</label>
-    </div>
-    <div class="quiz-section">
-        <p class="quiz-question">Question 4</p>
-        <label class="quiz-answer"><input type="radio" name="q2" data-correct="false"> 64</label>
-        <label class="quiz-answer"><input type="radio" name="q2" data-correct="true"> 64</label>
-        <label class="quiz-answer"><input type="radio" name="q2" data-correct="false"> 32</label>
-    </div>
-
-    <!-- Add more quiz questions as needed -->
-
-    <button onclick="checkAnswers()">Submit</button>
 </body>
 </html>

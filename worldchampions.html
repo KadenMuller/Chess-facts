@@ -26,12 +26,20 @@
 
         /* Add some styling for the champion section */
         .champion-description {
-            text-align: right;
+          display:inline-block;
+          vertical-align:middle;
         }
 
         .champion-section {
             color:black;
           
+        }
+        .champion-image {
+            width: 200px;
+            height: 200px;
+            margin-right: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
         }
 
         .wc-text {
@@ -114,14 +122,14 @@ function myFunction() {
 <section>
     <marquee
     direction="down"
-    width="1000"
+    width="1400"
     height="50"
     behavior="alternate"
     style="border:solid">
     <marquee behavior="alternate"><h2>Table of World Champions</h2></marquee>
   </marquee>
    
-    <table border="2px">
+    <table border="2px" color="black">
         <tr>
             <th>#</th>
             <th>Player</th>
@@ -255,126 +263,201 @@ function myFunction() {
 
 <section>
     
-       <marquee> <h1>Information about the World Champions</h1> </marquee>
+       <marquee behavior="slide"> <h1>Information about the World Champions</h1> </marquee>
+
+
         <div class="champion-section">
             <img src="images/World Champions/Wilhelm Steinitz.jpeg" alt="Image of Wilhelm Steinitz" class="champion-image">
-            
-                <strong>Wilhelm Steinitz</strong> was the first official World Chess Champion. He held the title from 1886 to 1894. Steinitz was known for his positional understanding and strategic play.<a href="magnuscarlsen.html">Read More</a>
-            </div>
+                <p class="champion-description">
+                    <strong>Wilhelm Steinitz</strong> was the first official World Chess Champion. 
+                    He held the title from 1886 to 1894. Steinitz was known for his positional understanding and strategic play.
+                    <a href="magnuscarlsen.html">Read More</a>
+                </p>
+        </div>
+
           <!-- This is a Break//////////////////////////////////////////////////////// --><br>
+
+
             <div class="champion-section">
-                <img src="images/World Champions/Emanuel Lasker.jpeg" alt="Image of Wilhelm Steinitz" class="champion-image" width="250" height="250">
-                <div class="champion-description">
-                    <strong>Emanuel Lasker</strong> became the second World Chess Champion in 1894. He held the title for a record-breaking 27 years, until 1921. Lasker was known for his deep understanding of the game and his ability to defend difficult positions.<a href="magnuscarlsen.html">Read More</a>
-                </div>
+                <img src="images/World Champions/Emanuel Lasker.jpeg" alt="Image of Emanuel Lasker" class="champion-image" width="250" height="250">
+                    <p class="champion-description">
+                        <strong>Emanuel Lasker</strong> became the second World Chess Champion in 1894. 
+                        He held the title for a record-breaking 27 years, until 1921. 
+                        Lasker was known for his deep understanding of the game and his ability to defend difficult positions.
+                        <a href="magnuscarlsen.html">Read More</a>
+                    </p>
             </div>
+
             <!--This is a Break////////////////////////////////////////////////////// --><br>
+
+
             <div class="champion-section">
-                <img src="images/World Champions/Jose Raul Capablanca.jpeg" alt="Image of Wilhelm Steinitz" class="champion-image">
-                <div class="champion-description">
-                    <strong>Jose Raul Capablanca</strong> became the third World Chess Champion in 1921. He was known for his exceptional endgame skills and intuitive understanding of the game.<a href="magnuscarlsen.html">Read More</a>
-                </div>
-                <span class="wc-text">hello</span>
+                <img src="images/World Champions/Jose Raul Capablanca.jpeg" alt="Image of Jose Raul Capablanca" class="champion-image" style="float: left;">
+                    <p class="champion-description"></p>
+                    <strong>Jose Raul Capablanca</strong> became the third World Chess Champion in 1921. 
+                    He was known for his exceptional endgame skills and intuitive understanding of the game.
+                    <a href="magnuscarlsen.html">Read More</a>
+                    </p>
             </div>
            <!--This is a Break/////////////////////////////////////////////////////////-->
             <div class="champion-section">
-                <img src="images/World Champions/Wilhelm Steinitz.jpeg" alt="Image of Wilhelm Steinitz" class="champion-image">
-                <div class="champion-description">
-                    <strong>Alexander Alekhine</strong> became the fourth World Chess Champion in 1927. He held the title until his death in 1946. Alekhine was known for his aggressive and imaginative playing style.<a href="magnuscarlsen.html">Read More</a>
-                </div>
+                <img src="images/World Champions/Alexander Alekhine.jpeg" alt="Image of Alexander Alekhine" class="champion-image">
+                    <p class="champion-description">
+                        <strong>Alexander Alekhine</strong> became the fourth World Chess Champion in 1927. 
+                        He held the title until his death in 1946. Alekhine was known for his aggressive and imaginative playing style.
+                        <a href="magnuscarlsen.html">Read More</a>
+                    </p>
             </div>
+
             <!--This is a Break/////////////////////////////////////////////////////////-->
+
             <div class="champion-section">
                 <img src="images/World Champions/Max Euwe.jpeg" alt="Image of Max Euwe" class="champion-image">
-                <div class="champion-description">
-                    <strong>Max Euwe</strong> became the fifth World Chess Champion in 1935. He held the title for two years. Euwe was known for his solid positional play and strong endgame skills.<a href="magnuscarlsen.html">Read More</a>
-                </div>
+                    <p class="champion-description">
+                        <strong>Max Euwe</strong> became the fifth World Chess Champion in 1935. 
+                        He held the title for two years. Euwe was known for his solid positional play and strong endgame skills.
+                        <a href="magnuscarlsen.html">Read More</a>
+                    </p>
             </div>
+
             <!--This is a Break/////////////////////////////////////////////////////////-->
+
             <div class="champion-section">
                 <img src="images/World Champions/Mikhail Botvinnik.jpeg" alt="Image of Mikhail Botvinnik" class="champion-image">
-                <div class="champion-description">
-                    <strong>Mikhail Botvinnik</strong> became the sixth World Chess Champion in 1948. He held the title for a total of 13 years, in three separate reigns. Botvinnik was known for his deep preparation and scientific approach to the game.<a href="magnuscarlsen.html">Read More</a>
-                </div>
+                    <p class="champion-description">
+                        <strong>Mikhail Botvinnik</strong> became the sixth World Chess Champion in 1948. 
+                        He held the title for a total of 13 years, in three separate reigns. 
+                        Botvinnik was known for his deep preparation and scientific approach to the game.
+                        <a href="magnuscarlsen.html">Read More</a>
+                    </p>
             </div>
+
             <!--This is a Break/////////////////////////////////////////////////////////-->
+
             <div class="champion-section">
                 <img src="images/World Champions/Vasily Smyslov.jpeg" alt="Image of Vasily Smysolov" class="champion-image">
-                <div class="champion-description">
-                    <strong>Vasily Smyslov</strong> became the seventh World Chess Champion in 1957. He held the title for one year. Smyslov was known for his exceptional positional understanding and endgame skills.<a href="magnuscarlsen.html">Read More</a>
-                </div>
+                    <p class="champion-description">
+                        <strong>Vasily Smyslov</strong> became the seventh World Chess Champion in 1957. 
+                        He held the title for one year. 
+                        Smyslov was known for his exceptional positional understanding and endgame skills.
+                        <a href="magnuscarlsen.html">Read More</a>
+                    </p>
             </div>
+
             <!--This is a Break/////////////////////////////////////////////////////////-->
+
             <div class="champion-section">
                 <img src="images/World Champions/Mikhail Tal" alt="Image of Mikhail Tal" class="champion-image">
-                <div class="champion-description">
-                    <strong>Mikhail Tal</strong> became the eighth World Chess Champion in 1960. He held the title for one year. Tal was known for his aggressive and tactical playing style.<a href="magnuscarlsen.html">Read More</a>
-                </div>
+                    <p class="champion-description">
+                        <strong>Mikhail Tal</strong> became the eighth World Chess Champion in 1960. 
+                        He held the title for one year. Tal was known for his aggressive and tactical playing style.
+                        <a href="magnuscarlsen.html">Read More</a>
+                    </p>
             </div>
+
             <!--This is a Break/////////////////////////////////////////////////////////-->
+
             <div class="champion-section">
                 <img src="images/World Champions/Tigran Petrosian.jpeg" alt="Image of Tigran Petrosian" class="champion-image">
-                <div class="champion-description">
-                    <strong>Tigran V. Petrosian</strong> became the ninth World Chess Champion in 1963. He held the title for six years. Petrosian was known for his defensive skills and ability to create counterplay.<a href="magnuscarlsen.html">Read More</a>
-                </div>
+                    <p class="champion-description">
+                        <strong>Tigran V. Petrosian</strong> became the ninth World Chess Champion in 1963. 
+                        He held the title for six years. Petrosian was known for his defensive skills and ability to create counterplay.
+                        <a href="magnuscarlsen.html">Read More</a>
+                    </p>
             </div>
+
             <!--This is a Break/////////////////////////////////////////////////////////-->
+
             <div class="champion-section">
                 <img src="images/World Champions/Boris Spassky.jpeg" alt="Image of Boris Spassky" class="champion-image">
-                <div class="champion-description">
-                    <strong>Boris Spassky</strong> became the tenth World Chess Champion in 1969. He held the title for three years. Spassky was known for his universal playing style and creative ideas.<a href="magnuscarlsen.html">Read More</a>
-                </div>
+                    <p class="champion-description">
+                        <strong>Boris Spassky</strong> became the tenth World Chess Champion in 1969. 
+                        He held the title for three years. Spassky was known for his universal playing style and creative ideas.
+                        <a href="magnuscarlsen.html">Read More</a>
+                    </p>
             </div>
+
             <!--This is a Break/////////////////////////////////////////////////////////-->
+
             <div class="champion-section">
                 <img src="images/World Champions/Bobby Fisher.jpeg" alt="Image of Bobby Fisher" class="champion-image">
-                <div class="champion-description">
-                    <strong>Bobby Fischer</strong> became the eleventh World Chess Champion in 1972. He held the title for three years. Fischer was known for his exceptional talent and uncompromising approach to the game.<a href="magnuscarlsen.html">Read More</a>
-                </div>
+                    <p class="champion-description">
+                        <strong>Bobby Fischer</strong> became the eleventh World Chess Champion in 1972. 
+                        He held the title for three years. Fischer was known for his exceptional talent and uncompromising approach to the game.
+                        <a href="magnuscarlsen.html">Read More</a>
+                    </p>
             </div>
             <!--This is a Break/////////////////////////////////////////////////////////-->
             <div class="champion-section">
                 <img src="images/World Champions/Anatoly Karpov.jpeg" alt="Image of Anatoly Karpov" class="champion-image">
-                <div class="champion-description">
-                    <strong>Anatoly Karpov</strong> became the twelfth World Chess Champion in 1975. He held the title for ten years. Karpov was known for his solid positional play and excellent endgame technique.<a href="magnuscarlsen.html">Read More</a>
-                </div>
+                    <p class="champion-description">
+                        <strong>Anatoly Karpov</strong> became the twelfth World Chess Champion in 1975. 
+                        He held the title for ten years. 
+                        Karpov was known for his solid positional play and excellent endgame technique.
+                        <a href="magnuscarlsen.html">Read More</a>
+                    </p>
             </div>
+
             <!--This is a Break/////////////////////////////////////////////////////////-->
+
             <div class="champion-section">
                 <img src="images/World Champions/Garry Kasparov.jpeg" alt="Image of Garry Kasparov" class="champion-image">
-                <div class="champion-description">
-                    <strong>Garry Kasparov</strong> became the thirteenth World Chess Champion in 1985. He held the title for fifteen years. Kasparov was known for his aggressive and dynamic playing style.<a href="magnuscarlsen.html">Read More</a>
-                </div>
+                    <p class="champion-description">
+                        <strong>Garry Kasparov</strong> became the thirteenth World Chess Champion in 1985. 
+                        He held the title for fifteen years. 
+                        Kasparov was known for his aggressive and dynamic playing style.
+                        <a href="magnuscarlsen.html">Read More</a>
+                    </p>
             </div>
+
             <!--This is a Break/////////////////////////////////////////////////////////-->
+
             <div class="champion-section">
                 <img src="images/World Champions/Vladimir Kramnik.jpeg" alt="Image of Vladimir Kramnik" class="champion-image">
-                <div class="champion-description">
-                    <strong>Vladimir Kramnik</strong> became the fourteenth World Chess Champion in 2000. He held the title for seven years. Kramnik was known for his solid and positional playing style.<a href="magnuscarlsen.html">Read More</a>
-                </div>
+                    <p class="champion-description">
+                        <strong>Vladimir Kramnik</strong> became the fourteenth World Chess Champion in 2000. 
+                        He held the title for seven years. 
+                        Kramnik was known for his solid and positional playing style.
+                        <a href="magnuscarlsen.html">Read More</a>
+                    </p>
             </div>
+
             <!--This is a Break/////////////////////////////////////////////////////////-->
+
             <div class="champion-section">
                 <img src="images/World Champions/Viswanathan Anand.jpeg" alt="Image of Viswanathan Anand" class="champion-image">
-                <div class="champion-description">
-                    <strong>Viswanathan Anand</strong> became the fifteenth World Chess Champion in 2007. He held the title for six years. Anand was known for his tactical skills and ability to calculate complex positions.<a href="magnuscarlsen.html">Read More</a>
-                </div>
+                    <p class="champion-description">
+                        <strong>Viswanathan Anand</strong> became the fifteenth World Chess Champion in 2007. 
+                        He held the title for six years. 
+                        Anand was known for his tactical skills and ability to calculate complex positions.
+                        <a href="magnuscarlsen.html">Read More</a>
+                    </p>
             </div>
+
             <!--This is a Break/////////////////////////////////////////////////////////-->
+
             <div class="champion-section">
                 <img src="images/World Champions/Magnus Carlsen.jpg" alt="Image of Magnus Carlsen" class="champion-image">
-                <div class="champion-description">
-                    <strong>Magnus Carlsen</strong> became the sixteenth World Chess Champion in 2013. He is no longer the current reigning champion. Carlsen is known for his deep understanding of the game and exceptional endgame skills. <a href="magnuscarlsen.html">Read More</a>
-                </div>
+                    <p class="champion-description">
+                        <strong>Magnus Carlsen</strong> became the sixteenth World Chess Champion in 2013. 
+                        He is no longer the current reigning champion. 
+                        Carlsen is known for his deep understanding of the game and exceptional endgame skills. 
+                        <a href="magnuscarlsen.html">Read More</a>
+                    </p>
             </div>
+
             <!--This is a Break/////////////////////////////////////////////////////////-->
+
             <div class="champion-section">
                 <img src="images/World Champions/Ding Liren.png" alt="Image of Ding Liren" class="champion-image">
-                <div class="champion-description" text-align="center">
-                    <strong>Ding Liren</strong> became the seventeenth World Chess Champion in 2023. He is the current reigning champion. Ding is known for his solid and positional playing style.<a href="magnuscarlsen.html">Read More</a>
-                </div>
+                    <p class="champion-description" text-align="center">
+                        <strong>Ding Liren</strong> became the seventeenth World Chess Champion in 2023. 
+                        He is the current reigning champion. 
+                        Ding is known for his solid and positional playing style.
+                        <a href="magnuscarlsen.html">Read More</a>
+                    </p>
             </div>
-        </div>
+        
         
 </section>
 
@@ -547,4 +630,10 @@ function myFunction() {
 
     <button onclick="checkAnswers()">Submit</button>
 </body>
+
+
+
+<footer>
+   <blockquote> "I can do all things through Christ who strengethens me" - Philippians 4:13</blockquote>
+</footer>
 </html>

@@ -1,0 +1,24 @@
+.slideshow-container {
+    position: relative;
+    max-width: 100%;
+    height: auto;
+    margin: auto;
+}
+
+.slideshow-container img {
+    display: none;
+    max-width: 100%;
+    height: auto;
+}
+
+img {
+    vertical-align: middle;
+    border-style:hidden;
+}
+
+h1{
+    font-size: 50px;
+    color: #fff;
+    text-align: center;
+    margin-top: 50px;
+}
