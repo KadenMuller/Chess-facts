@@ -14,6 +14,8 @@
 img {
     vertical-align: middle;
     border-style:hidden;
+    width: 250px;
+    height: 250px;
 }
 
 h1{
@@ -21,4 +23,20 @@ h1{
     color: #fff;
     text-align: center;
     margin-top: 50px;
+}
+
+#navigationBarList{
+    display: inline-block;
+    margin: 0;
+    margin-right: 10px;
+    padding: 10px;
+    background-color: white;    
+    font-size: 25px;
+    color:black;
+    width: 100%;
+}
+#navigationBarList li{
+    display: inline;
+    width: 100px;
+    margin-right: 20px;
 }
