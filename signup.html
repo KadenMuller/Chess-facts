@@ -50,6 +50,27 @@
         button[type="submit"]:hover {
             background-color: #ff8533;
         }
+        
+        .login-link {
+            display: block;
+            text-align: center;
+            margin-top: 10px;
+        }
+        
+        .login-link a {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #ffffff;
+            border: 1px solid #ff6600;
+            border-radius: 4px;
+            color: #ff6600;
+            text-decoration: none;
+        }
+        
+        .login-link a:hover {
+            background-color: #ff6600;
+            color: #ffffff;
+        }
     </style>
     <script>
         document.addEventListener("DOMContentLoaded", function() {
@@ -63,6 +84,7 @@
     </script>
 </head>
 <body>
+    
     <h1>Sign Up</h1>
     
     <form>
@@ -76,6 +98,10 @@
         <input type="password" id="password" name="password" required>
         
         <button type="submit">Sign Up</button>
+        
+        <div class="login-link">
+            <a href="#">Login</a>
+        </div>
     </form>
 </body>
 </html>
