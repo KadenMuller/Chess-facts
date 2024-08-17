@@ -8,6 +8,50 @@
     
     <form>
         <!-- Quiz questions will be added here -->
+
+        <fieldset>
+            <legend>Question 1: What is the capital of France?</legend>
+            <input type="radio" name="q1" value="Paris"> Paris<br>
+            <input type="radio" name="q1" value="London"> London<br>
+            <input type="radio" name="q1" value="Berlin"> Berlin<br>
+            <input type="radio" name="q1" value="Rome"> Rome<br>
+        </fieldset>
+
+        <fieldset>
+            <legend>Question 2: Who painted the Mona Lisa?</legend>
+            <input type="radio" name="q2" value="Leonardo da Vinci"> Leonardo da Vinci<br>
+            <input type="radio" name="q2" value="Pablo Picasso"> Pablo Picasso<br>
+            <input type="radio" name="q2" value="Vincent van Gogh"> Vincent van Gogh<br>
+            <input type="radio" name="q2" value="Michelangelo"> Michelangelo<br>
+        </fieldset>
+
+        <fieldset>
+            <legend>Question 3: What is the largest planet in our solar system?</legend>
+            <input type="radio" name="q3" value="Jupiter"> Jupiter<br>
+            <input type="radio" name="q3" value="Saturn"> Saturn<br>
+            <input type="radio" name="q3" value="Mars"> Mars<br>
+            <input type="radio" name="q3" value="Earth"> Earth<br>
+        </fieldset>
+
+        <script>
+            // Add event listener to the form submit button
+            document.querySelector('form').addEventListener('submit', function(event) {
+                event.preventDefault(); // Prevent form submission
+
+                // Get the selected answers
+                var q1Answer = document.querySelector('input[name="q1"]:checked');
+                var q2Answer = document.querySelector('input[name="q2"]:checked');
+                var q3Answer = document.querySelector('input[name="q3"]:checked');
+
+                // Check if all questions are answered
+                if (q1Answer && q2Answer && q3Answer) {
+                    // Display the selected answers
+                    alert('Your answers:\n\nQuestion 1: ' + q1Answer.value + '\nQuestion 2: ' + q2Answer.value + '\nQuestion 3: ' + q3Answer.value);
+                } else {
+                    alert('Please answer all questions before submitting.');
+                }
+            });
+        </script>
         
         <button type="submit">Submit</button>
     </form>
